@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airpods Pro</title>
+  <!--파비콘-->
+  <link rel="icon" href="assets/favicon.ico" />
+  <!--css 외부정의 링크-->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--웹아이콘-->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+  <!--GSAP-->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+
+  <!--외부정의 js-->
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="apple-navbar">
+      <div class="nav-content">
+        <ul class="nav-items">
+          <li><a href="#">
+              <ion-icon name="logo-apple"></ion-icon>
+            </a></li>
+          <li><a href="#">Store</a></li>
+          <li><a href="#">Mac</a></li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">AirPods</a></li>
+          <li><a href="#">TV &amp; Home</a></li>
+          <li><a href="#">Only on Apple</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">
+              <ion-icon name="search-outline"></ion-icon>
+            </a></li>
+          <li><a href="#">
+              <ion-icon name="bag-outline"></ion-icon>
+            </a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="airpods-navbar">
+      <div class="nav-content">
+        <div class="nav-logo"><a href="#">Airpods Pro</a></div>
+        <ul class="nav-items">
+          <li><button disabled>Overview</button></li>
+          <li><button>Tech Specs</button></li>
+          <li><button>Compare</button></li>
+          <li><button class="buy-btn">Buy</button></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- section 01 -->
+    <section class="section-01 scroll-section airpods">
+      <div class="main-elem">
+        <h1>AirPods Pro</h1>
+        <a href="#">
+          Watch <span>Jump</span>
+          <ion-icon name="play-circle-outline"></ion-icon>
+        </a>
+      </div>
+      <!-- 이미지 프레임을 표시할 캔버스 -->
+      <div class="canvas-elem">
+        <canvas id="airpods"></canvas>
+      </div>
+      <!-- 텍스트 -->
+      <div class="msg-elem msg-elem-01">
+        <p>
+          Active Noise Cancellation <br>
+          for immersive sound
+        </p>
+        <div class="msg-elem msg-elem-02">
+          <p>
+            Transparency mode for hearing <br />
+            what's happening around you.
+          </p>
+        </div>
+        <div class="msg-elem msg-elem-03">
+          <p>
+            A customisable fit <br />
+            for all-day comfort.
+          </p>
+        </div>
+        <div class="msg-elem msg-elem-04">
+          <p>Magic like you've never heard.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section 02 -->
+    <section class="section-02 scroll-section head-bob-turn">
+      <div class="msg-elem">
+        <smaill>Comfort</smaill>
+        <h2>Arrival of the fittest.</h2>
+      </div>
+      <div class="canvas-elem">
+        <canvas id="head-bob-turn"></canvas>
+      </div>
+    </section>
+
+    <!--section-03-->
+    <section class="section-03 static-section explode-tips">
+      <div class="section-03-1">
+        <img src="assets/images/0000.jpg" alt="" />
+        <div class="text">
+          편안함의 디테일을 다듬어 새로운 차원의 인이어를 창조했습니다. 뛰어난 밀착력을 제공하는 맞춤형 핏을 갖춘 헤드폰 능동형 소음 제거용. 당신은 당신의 음악을 느낄 것입니다.
+        </div>
+      </div>
+
+      <div class="section-03-2">
+        <img src="assets/images/0080.jpg" alt="" />
+        <div class="text">
+          세 가지 크기의 부드럽고 유연한 실리콘 팁 중에서 선택하세요. 가장 잘
+          맞는 것을 찾고 최상의 사운드를 얻으십시오.
+        </div>
+      </div>
+
+      <div class="section-03-3">
+        <img src="assets/images/0138.jpg" alt="" />
+        <div class="text">
+          내부가 가늘어지는 이 팁은 귀 모양에 맞춰져 유지됩니다. AirPods Pro는 안전합니다. 그리고 압력 균등화에 도움이 되는 통풍구를 통해 귀에 아무것도 없는 것 같은 느낌
+        </div>
+      </div>
+    </section>
+
+    <!--section-04-->
+    <section class="section-04 static-section flip-for-nc">
+      <div class="section-04-1">
+        <img src="assets/images/0026.jpg" alt="" />
+        <div class="text">
+          <p>Active Noise Cancellation</p>
+          <h1>
+            Sound that cuts <br />
+            out the noise.
+          </h1>
+        </div>
+      </div>
+
+      <div class="section-04-2">
+        <img src="assets/images/0054.jpg" alt="" />
+        <div class="text">
+          AirPods Pro는 액티브 노이즈를 지원하는 유일한 인이어 헤드폰입니다.
+          귀의 기하학적 형태에 지속적으로 적응하는 취소 기능 그리고 이어팁의 핏 - 세상을 차단하여 당신이 듣고 있는 것에 집중하세요.
+        </div>
+      </div>
+    </section>
+
+    <!--section-05-->
+    <section class="section-05 static-section transparency-head">
+      <img src="assets/images/0008.jpg" alt="" />
+      <div class="text">
+        <p>
+          주변에서 무슨 일이 일어나고 있는지 듣고 싶으십니까? 길게 누르시면 됩니다 스템의 포스 센서가 액티브 노이즈 캔슬링 사이를 이동합니다.
+          투명도 모드 - 외부 소리가 들어오도록 하고 사람들과 대화할 때 자연스럽게 들리고 느껴져야 하는 것.
+        </p>
+        <p>
+          그리고 시끄러운 곳에서 누군가와 얼굴을 맞대고 이야기를 하고 있을 때
+          환경에서 Conversation Boost는 다음과 같은 방법으로 더 명확하게 들을 수 있도록 도와줍니다.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="content">
+      <small>Copyright &copy; 2026 Apple Inc. All rights reserved.</small>
+      <small>Korea.</small>
+    </div>
+  </footer>
+</body>
+
+</html>
